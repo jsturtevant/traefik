@@ -38,7 +38,7 @@ func newVersionCmd() *flaeg.Command {
 }
 
 func getVersionPrint(wr io.Writer) error {
-	tmpl, err := template.New("").Parse(versionTemplate)
+	tmpl, err := template.New("asdf").Parse(versionTemplate)
 	if err != nil {
 		return err
 	}
